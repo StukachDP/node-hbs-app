@@ -1,0 +1,17 @@
+<header class="header-area">
+    <div class="header-logo-area">
+        <div class="logo-area">
+            <img class="logo" src="/logo.jpg" alt="Logo"/>
+        </div>
+        <div class="navigation-area">
+            <div class="navigation-panel">
+                <ul>
+                    <li><a href="/search" class="search-page">Главная</a></li>
+                    {{#if adminStatus}}
+                        <li><a href="/create" class="create-magazine-page">Создать новый журнал</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

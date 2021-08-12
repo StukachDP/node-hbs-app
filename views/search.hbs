@@ -1,0 +1,87 @@
+<div class="main-area">
+    <div class="list-magazines">
+        {{#each users}}
+            <div class="magazine-info" onclick="location.href='/individualInfo/{{this.id}}';"> 
+                <p class="origin-name">{{this.nameOriginal}} </p>
+                <p class="english-name">{{this.nameOriginal}} </p>
+                <p class="ISSN-print">:{{this.ISSNprint}}</p>
+                {{!-- {{#if adminStatus}} --}}
+                    <div class="dinamic-elements">
+                        <a href="/edit/{{this.id}}">Edit</a>
+                        <form class="delete-form" action="delete/{{this.id}}" method="POST">
+                            <input type="submit" value="Delete" />
+                        </form>
+                    </div>
+                {{!-- {{/if}} --}}
+            </div>
+        {{/each}}
+    </div>
+    <div class="right_body_wrap">
+        <div class="right_body_bg">
+            <form method="POST" action="/searchByName">
+                <label>Поиск по названию</label>
+                <input name="name" class="field" id="search-field" placeholder="Поиск по названию"/><br><br>
+                <br><br>
+            </form>
+                <form method="POST" action="/searchByScientificDirections">
+                    <label>Поиск по научным направлениям</label>
+                    <p>
+                        <select name="scientificDirection" placeholder="Choose">
+                            <option value="технические">Технические</option>
+                            <option value="химические">Химические</option>
+                            <option value="биологические">Биологические</option>
+                            <option value="экономические">Экономические</option>
+                            <option value="юридические">Юридические</option>
+                            <option value="исторические">Исторические</option>
+                            <option value="физические">Физические</option>
+                            <option value="педагогические">Педагогические</option>
+                            <option value="сельскохозяйственные">Сельскохозяйственные</option>
+                        </select>
+                    </p>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            <div class="login_wrap">
+                <p class="user_text">Вход в администрирование</p>
+                <button class="buttonLogIn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</button>
+                <a href="/logOut"><button class="buttonLogOut" style="width: auto;">Log Out</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="id01" class="modal">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+<form class="modal-content"  action="/logIn" method="POST">
+    <div class="container">
+        <h1>Log In</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="userName"><b>Name</b></label><br>
+        <input type="text" placeholder="Enter userName" name="userName" required>
+        <br>
+        <br>
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Log in</button>
+        </div>
+    </div>
+</form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

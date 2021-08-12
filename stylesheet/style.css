@@ -1,0 +1,604 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.header-area {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(90, 150, 31);
+    height: 15%;
+    display: inline-flex;
+}
+
+.header-logo-area {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo-area {
+    width: 15%;
+    float: left;
+    background-color: black;
+}
+
+.logo {
+    width: 100%;
+    padding: 1em;
+}
+
+.navigation-area {
+    width: 85%;
+    float: left;
+    padding: 2em 0 0 2em;
+}
+
+.navigation-panel {
+    width: 100%;
+}
+
+.navigation-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation-panel ul li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.navigation-panel ul li a.create-magazine-page:link,
+a.create-magazine-page:visited {
+    position: relative;
+    margin: 1em;
+    color: #000;
+    text-align: center;
+}
+
+.navigation-panel ul li a.create-magazine-page:hover,
+a.search-page {
+    position: relative;
+    margin: 1em;
+    color: #fff;
+    text-align: center;
+}
+
+.main-area {
+    width: 100%;
+    margin: auto;
+    display: inline-flex;
+}
+
+.list-magazines {
+    width: 60%;
+    float: left;
+    display: grid;
+    padding: 2em 2em 0 5em;
+}
+
+.magazine-info:nth-child(even) {
+    background-color: rgb(243, 230, 230);
+}
+
+.magazine-info:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
+
+.origin-name {
+    font-size: 2em;
+}
+
+.english-name {
+    font-size: 1em;
+}
+
+.ISSN-print {
+    font-size: 1em;
+}
+
+.dinamic-elements {
+    float: right;
+    padding: 0.5em 1em 0.5em 0.5em;
+}
+
+.delete-form {
+    display: inline-flex;
+}
+
+.footer-area {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgb(90, 150, 31);
+}
+
+.footer-navigation-area {
+    display: inline-flex;
+    padding: 2em;
+}
+
+a.footer-create-magazine-page:link,
+a.footer-create-magazine-page:visited {
+    color: #000000;
+    padding: 0 2em 0 2em;
+}
+
+a.footer-create-magazine-page:hover,
+a.footer-search-page {
+    color: #ffffff;
+    padding: 0 2em 0 2em;
+}
+
+.field {
+    width: 180px
+}
+
+.blank {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+}
+
+.collus_text {
+    font: bold 12px/50px Verdana, Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-align: right;
+    padding: 0 18px 0 0;
+}
+
+
+/*---------------------------------------------logo--------------------------------------------------*/
+
+
+/*---------------------------------------------nav--------------------------------------------------*/
+
+
+/*---------------------------------------------header----------------------------------------------*/
+
+.fresh_text {
+    font: bold 44px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.you_text {
+    font: normal 38px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.read_botn {
+    width: 92px;
+    height: 31px;
+    background: url(../images/click_bg.jpg) 0 0 no-repeat;
+    font: bold 12px/31px Tahome, Arial, Helvetica, sans-serif;
+    color: #303025;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.read_botn:hover {
+    text-decoration: none;
+    color: #d67503;
+}
+
+
+/*---------------------------------------------growth------------------------------------------*/
+
+.develop_text {
+    font: normal 16px Arial, Helvetica, sans-serif;
+    color: #979b9f;
+    text-transform: none;
+    padding: 0 0 0 3px;
+}
+
+
+/*----------------------------------------------body_left---------------------------------------------*/
+
+.body_wrap {
+    width: 100%;
+    margin-left: 200px;
+}
+
+.left_body_wrap {
+    width: 55%;
+    float: left;
+}
+
+.left_body_main {
+    width: 660px;
+    float: left;
+}
+
+.welcome_text {
+    font: bold 30px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.web_text {
+    font: bold 22px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #898989;
+    text-transform: uppercase;
+}
+
+.green_text {
+    font: bold 12px verdana, Arial, Helvetica, sans-serif;
+    color: #7f9D07;
+    text-transform: uppercase;
+}
+
+.read_more {
+    font: bold 11px/20px Tahoma, Arial, Helvetica, sans-serif;
+    color: #e58e11;
+    height: 20px;
+    background: url(../images/green_dot.jpg) 0 +8px no-repeat;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 0 10px;
+}
+
+.read_more:hover {
+    color: #7f9D07;
+    text-decoration: none;
+}
+
+.busniess_text {
+    font: bold 24px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    padding: 35px 0 25px 0;
+}
+
+.busniess_area_text {
+    font: normal 12px/18px Verdana, Arial, Helvetica, sans-serif;
+    color: #576370;
+    text-transform: none;
+}
+
+.watch_main_wrap {
+    width: 100%;
+    float: left;
+    padding: 0 0 25px 0;
+}
+
+.watch_wrap {
+    width: 120px;
+    float: left;
+}
+
+.watch_wrap1 {
+    width: 540px;
+    float: left;
+}
+
+.nulla {
+    font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+    color: #e58e11;
+    text-decoration: none;
+}
+
+.nulla:hover {
+    color: #7f9D07;
+    text-decoration: none;
+}
+
+
+/*----------------------------------------------body_right_part---------------------------------------------*/
+
+.right_body_wrap {
+    width: 20%;
+    float: left;
+}
+
+.login_wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.user_text {
+    font: bold 24px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #98aa1e;
+    text-transform: uppercase;
+    padding: 32px 0 0 0;
+}
+
+.user_name_text {
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+    color: #576370;
+    padding: 12px 0 0 28px;
+}
+
+.contact_filed {
+    border: none;
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+    padding: 3px 0 0 0;
+    background: none;
+    Width: 158px;
+    height: 18px;
+    color: #aeb2b6;
+}
+
+.user_name_text1 {
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+    color: #576370;
+    padding: 12px 0 0 28px;
+}
+
+.log {
+    font: bold 12px/24px Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: url(../images/log_nor.jpg) 0 0 no-repeat;
+    text-decoration: none;
+    width: 70px;
+    height: 25px;
+    display: block;
+    text-align: center;
+}
+
+.log:hover {
+    font: bold 12px/24px Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: url(../images/log_hover.jpg) 0 0 no-repeat;
+    text-decoration: none;
+    width: 70px;
+    height: 25px;
+    display: block;
+    text-align: center;
+}
+
+.read_more1 {
+    font: normal 11px/16px Tahoma, Arial, Helvetica, sans-serif;
+    color: #576370;
+    height: 20px;
+    background: url(../images/orange_dot.jpg) 0 +6px no-repeat;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 0 10px;
+}
+
+.read_more1:hover {
+    color: #e58e11;
+    text-decoration: none;
+}
+
+.event_wrap {
+    width: 255px;
+    float: left;
+}
+
+.event_top_wrap {
+    width: 255px;
+    background: url(../images/event_top.jpg) 0 0 no-repeat;
+    height: 80px;
+}
+
+.event_meddile_wrap {
+    width: 255px;
+    background: url(../images/event_meddile.jpg) 0 0 repeat-y;
+}
+
+.latest_text {
+    font: bold 24px Trajan Pro, Arial, Helvetica, sans-serif;
+    color: #f4911c;
+    padding: 38px 0 0 65px;
+}
+
+.feb_wrap {
+    width: 215px;
+    margin: 0 auto;
+}
+
+.green_right {
+    font: bold 12px Tahoma, Arial, Helvetica, sans-serif;
+    color: #a59832;
+    background: url(../images/green_right.jpg) 0 0 no-repeat;
+    display: block;
+    padding: 10px 0 0 34px;
+}
+
+.busniess_area_text1 {
+    font: normal 11px/16px Verdana, Arial, Helvetica, sans-serif;
+    color: #576370;
+    text-transform: none;
+}
+
+.read_more2 {
+    font: normal 11px/16px Tahoma, Arial, Helvetica, sans-serif;
+    color: #e58e11;
+    height: 20px;
+    background: url(../images/orange_dot.jpg) 0 +6px no-repeat;
+    text-decoration: none;
+    display: block;
+    padding: 0 0 0 10px;
+}
+
+.read_more2:hover {
+    color: #7f9D07;
+    text-decoration: none;
+}
+
+
+/*----------------------------------------------footer---------------------------------------------*/
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 200px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #1cc71c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.buttonLogOut {
+    background-color: #c7521c;
+}
+
+.buttonLogIn {
+    background-color: #1cc71c;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal_visible {
+    display: block;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
